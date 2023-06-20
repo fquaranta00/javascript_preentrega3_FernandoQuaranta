@@ -15,7 +15,7 @@ pacientes.forEach(function (paciente) {
         <p>Documento: ${paciente.documento}</p>
         <p>Obra Social: ${paciente.obraSocial}</p>
         <p>Activo: ${paciente.activo}</p>
-      `;
+    `;
 
     // Agregar el div del paciente al contenedor de resultados
     resultadosContainer.appendChild(pacienteDiv);

@@ -9,8 +9,8 @@ let formulario = document.getElementById('formulario-paciente');
 let elementosFormulario = document.querySelectorAll('#formulario-paciente input');
 
 // Recorrer los elementos y vacía los placeholders de los campos del formulario
-elementosFormulario.forEach(function(elemento) {
-    elemento.addEventListener('focus', function() {
+elementosFormulario.forEach(function (elemento) {
+    elemento.addEventListener('focus', function () {
         this.setAttribute('placeholder', '');
     });
 });
@@ -35,7 +35,7 @@ formulario.addEventListener('submit', function (event) {
     };
 
 
-   // Ejecuta la funcion y guarda el objeto paciente en el Local Storage
+    // Ejecuta la funcion y guarda el objeto paciente en el Local Storage
     guardarPaciente(nuevoPaciente);
 
     // Devuelve ensaje de éxito
