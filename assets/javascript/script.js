@@ -1,6 +1,6 @@
 // Funcion para guardar datos de pacientes en local storage
 function guardarPaciente(paciente) {
-    var pacientes = JSON.parse(localStorage.getItem('pacientes')) || [];
+    var pacientes = JSON.parse(localStorage.getItem('pacientes')) || []; //el || [] lo agregamos porque si está vació el local storage da error
     pacientes.push(paciente);
     localStorage.setItem('pacientes', JSON.stringify(pacientes));
 }
