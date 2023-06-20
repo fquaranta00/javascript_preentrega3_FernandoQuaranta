@@ -23,7 +23,7 @@ formulario.addEventListener('submit', function (event) {
     var apellido = document.getElementById('apellido').value;
     var documento = document.getElementById('documento').value;
     var obraSocial = document.getElementById('obraSocial').value;
-    var activo = document.getElementById('activo').value;
+    var estado = document.getElementById('estado').value;
 
     // Crear un objeto paciente con los datos
     var nuevoPaciente = {
@@ -31,7 +31,7 @@ formulario.addEventListener('submit', function (event) {
         apellido: apellido,
         documento: documento,
         obraSocial: obraSocial,
-        activo: activo
+        estado: estado
     };
 
 
